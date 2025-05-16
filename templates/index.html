@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Our E-Commerce Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Our Store</h1>
+    <p>Browse our latest products and find great deals!</p>
+    
+    <a href="/login">Login</a> | <a href="/register">Sign Up</a>
+    
+    <h2>Featured Products</h2>
+    <div class="product-list">
+        {% for product in products %}
+            <div class="product">
+                <img src="{{ product.image }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p>Price: ${{ product.price }}</p>
+                <a href="/product/{{ product.id }}">View Details</a>
+                <a href="/add_to_cart/{{ product.id }}">Add to Cart</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

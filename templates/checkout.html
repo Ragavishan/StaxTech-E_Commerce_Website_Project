@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h2>Checkout</h2>
+    {% if cart_items %}
+        <ul>
+            {% for item in cart_items %}
+                <li>{{ item['name'] }} - ${{ item['price'] }}</li>
+            {% endfor %}
+        </ul>
+        <button onclick="alert('Payment Successful!')">Pay Now</button>
+    {% else %}
+        <p>Your cart is empty!</p>
+    {% endif %}
+    <a href="/">Continue Shopping</a>
+</body>
+</html>
