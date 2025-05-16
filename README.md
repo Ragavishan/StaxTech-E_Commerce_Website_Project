@@ -1,3 +1,5 @@
+🛒 **StaxTech E-Commerce Website Project**
+
 Welcome to the StaxTech E-Commerce Website — a simple yet powerful online store built with Flask and SQLite!
 This project showcases a full-stack web app where users can register, browse products, add items to a cart, and leave reviews. 🚀
 
