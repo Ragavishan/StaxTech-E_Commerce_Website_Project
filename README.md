@@ -69,4 +69,4 @@ Consider adding password hashing and security best practices before deployment
 Product images are linked externally for demonstration purposes only
 
 📄 License
-This project is licensed under the MIT License. Feel free to use and modify it! 🎉
+This project is licensed under the MIT License. 
