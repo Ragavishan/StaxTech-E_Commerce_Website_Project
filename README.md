@@ -35,9 +35,7 @@ pip install Flask
 4. Run the application
 bash
 Copy code
-python app.py
-5. Open in your browser
-Go to http://127.0.0.1:5000/ and start shopping! 🛒
+python app.py   🛒
 
 🗂️ Database Info
 The app auto-creates products.db on first run
